@@ -1,16 +1,21 @@
 class RandomWord {
+    //The first parameter the user enters
     private String word;
+    
+    //The second parameter that the user enters
     private String word2;
+
+    //To store the concatenated random letters
     private static String newWord = "";
   
     
-    
+  //Method creates the default values in case the user doesn't enter in any parameters.
   public RandomWord(){
     word = "";
     word2 = ""; 
   }
     
-  
+  //Method sets the instance variables to the parameters that the user enters in
   public RandomWord(String initWord, String initWord2){
     word = initWord;
     word2 = initWord2;
@@ -50,7 +55,7 @@ class RandomWord {
   
     }
   
-    
+    //Test cases
     public static void main(String[] args) {
         RandomWord rand1 = new RandomWord("zebra", "dog");
       
